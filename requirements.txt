@@ -1,0 +1,2 @@
+# Host-provided Python dependencies only; hooks.py checks availability.
+# No installer or direct GitHub wheel dependency is shipped.

@@ -1,0 +1,43 @@
+FXMacroData Agent Zero0.2.0 (MIT).
+
+Reuses Agent Zero adapter source from the existing owned integrations directory and public client/structured response safety code already published in Hermes0.3.0. Hermes source archive SHA25652159569900c423978d740d2b5b2ca1088dcb93eb37cb418c90fc978d9d15ebc. Original public client MIT source: https://github.com/fxmacrodata/fxmacrodata-public-client
+
+[
+  {
+    "source": "hermes_fxmacrodata/public_client/__init__.py",
+    "sha256": "73bb8115f473b48ee9028a149058d95df913417d9dbafa73c6ed0f9a398e470e",
+    "destination": "helpers/public_client/__init__.py"
+  },
+  {
+    "source": "hermes_fxmacrodata/public_client/client.py",
+    "sha256": "40d525cac44f5571ab5e52a10e8ab7041eb2d90f4df75165220f8c7392015a17",
+    "destination": "helpers/public_client/client.py"
+  },
+  {
+    "source": "hermes_fxmacrodata/public_client/transport.py",
+    "sha256": "27df3304e36d89818f6f529fddc5b38c8930dd57adb7aa4bd0d28ecbd77e7001",
+    "destination": "helpers/public_client/transport.py"
+  },
+  {
+    "source": "hermes_fxmacrodata/public_client/operations.json",
+    "sha256": "da673f804b870149cf4af4348e78c4984540cef7b901d7bfe9ffcfdbb6501041",
+    "destination": "helpers/public_client/operations.json"
+  },
+  {
+    "source": "hermes_fxmacrodata/public_client/mcp-tools.json",
+    "sha256": "7a6db823e90d5fb10bb66e8141bd14a13f14e8249c95010fd29ad8f202cc29aa",
+    "destination": "helpers/public_client/mcp-tools.json"
+  },
+  {
+    "source": "hermes_fxmacrodata/public_client/py.typed",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "destination": "helpers/public_client/py.typed"
+  },
+  {
+    "source": "hermes_fxmacrodata/response_safety.py",
+    "sha256": "34ca324c80737571a8a7998ffec3377ec2646ba54a0eb865ae77a79b90c4beaa",
+    "destination": "helpers/response_safety.py"
+  }
+]
+
+Changes: native adapter import target and branding attribution; current contracts retained byte-for-byte. No backend service, ingest, observation data, credentials or proprietary logic.

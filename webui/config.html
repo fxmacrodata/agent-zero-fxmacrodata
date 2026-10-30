@@ -1,0 +1,31 @@
+<html>
+<head><title>FXMacroData</title></head>
+<body>
+<div x-data>
+  <template x-if="config">
+    <div>
+      <div class="section-title">FXMacroData subscription</div>
+      <div class="section-description">
+        Connect your subscription for the datasets and history available to your plan.
+        <a href="https://fxmacrodata.com/subscribe?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=agent-zero&amp;utm_content=subscribe" target="_blank" rel="noopener noreferrer">Subscribe to FXMacroData</a>.
+        Public USD access lets you evaluate the integration before subscribing.
+      </div>
+      <div class="field">
+        <label class="field-label" for="fxmd-key-env">API key environment variable</label>
+        <div class="field-control"><input id="fxmd-key-env" type="text" x-model="config.api_key_env" placeholder="FXMACRODATA_API_KEY" /></div>
+      </div>
+      <div class="field-description">Enter the variable name. Store its value in the environment of the Agent Zero process.</div>
+      <div class="field">
+        <label class="field-label" for="fxmd-request-timeout">HTTP timeout (seconds)</label>
+        <div class="field-control"><input id="fxmd-request-timeout" type="number" min="1" max="120" x-model.number="config.request_timeout_seconds" /></div>
+      </div>
+      <div class="field">
+        <label class="field-label" for="fxmd-tool-timeout">Tool deadline (seconds)</label>
+        <div class="field-control"><input id="fxmd-tool-timeout" type="number" min="1" max="600" x-model.number="config.tool_timeout_seconds" /></div>
+      </div>
+      <p><a href="https://fxmacrodata.com/documentation/reference?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=agent-zero&amp;utm_content=docs" target="_blank" rel="noopener noreferrer">FXMacroData API documentation</a></p>
+    </div>
+  </template>
+</div>
+</body>
+</html>

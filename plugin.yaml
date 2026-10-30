@@ -1,0 +1,9 @@
+name: fxmacrodata
+title: FXMacroData
+description: Official-source macroeconomic research, FX reference rates, calendars, histories and central-bank analysis. Public USD evaluation and optional subscriber access.
+version: 0.2.0
+settings_sections:
+  - agent
+  - external
+per_project_config: true
+per_agent_config: true
